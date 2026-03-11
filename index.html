@@ -39,12 +39,13 @@
         }
 
         .hero-title {
-            font-size: clamp(3rem, 8vw, 5rem);
+            font-size: clamp(3.5rem, 8vw, 5rem);
             margin: 0;
             letter-spacing: -2px;
             background: linear-gradient(to right, #00d4ff, #38bdf8);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            font-weight: 800;
         }
 
         .hero-subtitle {
@@ -121,6 +122,8 @@
             text-decoration: none;
         }
 
+        .project-link:hover { text-decoration: underline; }
+
         /* Skills */
         .skills-container {
             display: flex;
@@ -145,7 +148,7 @@
         .social-icons a {
             color: white;
             margin: 0 15px;
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             transition: 0.3s;
         }
 
@@ -162,15 +165,15 @@
         <h1 class="hero-title">DERI YULIANSYAH</h1>
         <p class="hero-subtitle">Data Science Student • Control Room Specialist • Founder of Infinity Group</p>
         <div class="social-icons">
-            <a href="https://github.com/derrr08"><i class="fab fa-github"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/Deri-Yuliansyah" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/deri-yuliansyah-639025236?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/derrr_ans?igsh=Z3o3NzZ3YWV6c292" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
         </div>
     </header>
 
     <section id="about">
         <h2>Tentang Saya</h2>
-        <p style="font-size: 1.1rem; max-width: 800px;">
+        <p style="font-size: 1.1rem; max-width: 800px; line-height: 1.8;">
             Mahasiswa <strong>Data Science</strong> yang fokus pada analisis pola data untuk solusi strategis. 
             Memiliki pengalaman sebagai <strong>Control Room Officer</strong> yang membentuk ketelitian tinggi 
             dan kemampuan analisis real-time. Saat ini sedang mengembangkan <strong>Infinity Group</strong> 
@@ -192,12 +195,12 @@
             </div>
 
             <div class="project-card">
-                <div class="project-img" style="background: url('https://images.unsplash.com/photo-1552664730-d307ca884978?w=500') center/cover;"></div>
+                <div class="project-img" style="background: url('https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=500') center/cover;"></div>
                 <div class="project-info">
                     <span class="project-tag">Creative Agency</span>
                     <h3>Infinity Group Branding</h3>
-                    <p>Strategi konten dan pengembangan identitas digital untuk ekosistem kreator masa depan.</p>
-                    <a href="#" class="project-link">Lihat Proyek <i class="fas fa-arrow-right"></i></a>
+                    <p>Strategi konten dan pengembangan identitas digital untuk ekosistem kreator masa depan melalui YouTube.</p>
+                    <a href="https://youtube.com/@infinity_grow8?si=31DJQsbQN4Ikm2vF" target="_blank" class="project-link">Buka Channel YouTube <i class="fab fa-youtube"></i></a>
                 </div>
             </div>
 
@@ -216,18 +219,23 @@
     <section id="skills">
         <h2>Keahlian Utama</h2>
         <div class="skills-container">
-            <div class="skill-item">Python & R</div>
+            <div class="skill-item">Python & SQL</div>
             <div class="skill-item">Machine Learning</div>
-            <div class="skill-item">SQL Database</div>
-            <div class="skill-item">Content Strategy</div>
-            <div class="skill-item">Crisis Management</div>
             <div class="skill-item">Data Visualization</div>
+            <div class="skill-item">Content Strategy</div>
+            <div class="skill-item">Control Room Operations</div>
+            <div class="skill-item">Copywriting</div>
         </div>
     </section>
 
     <footer>
+        <div class="social-icons" style="margin-bottom: 20px;">
+            <a href="https://github.com/Deri-Yuliansyah" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/deri-yuliansyah-639025236?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/derrr_ans?igsh=Z3o3NzZ3YWV6c292" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
         <p style="margin-bottom: 10px;">Mari berkolaborasi membangun masa depan teknologi.</p>
-        <p style="opacity: 0.5; font-size: 0.9rem;">&copy; 2026 Deri. Built with passion and logic.</p>
+        <p style="opacity: 0.5; font-size: 0.9rem;">&copy; 2026 Deri Yuliansyah. Built with passion and logic.</p>
     </footer>
 
 </body>
