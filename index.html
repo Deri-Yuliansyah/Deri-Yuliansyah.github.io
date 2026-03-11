@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deri | Data Scientist & Creative Strategist</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #00d4ff;
+            --bg-dark: #0f172a;
+            --text-light: #f8fafc;
+            --card-bg: #1e293b;
+            --accent: #38bdf8;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            scroll-behavior: smooth;
+        }
+
+        /* Hero Section */
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), 
+                        url('https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2070') no-repeat center center/cover;
+            padding: 20px;
+        }
+
+        .hero-title {
+            font-size: clamp(3rem, 8vw, 5rem);
+            margin: 0;
+            letter-spacing: -2px;
+            background: linear-gradient(to right, #00d4ff, #38bdf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 20px 0;
+            opacity: 0.9;
+        }
+
+        /* Sections */
+        section {
+            padding: 100px 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            border-left: 5px solid var(--primary-color);
+            padding-left: 20px;
+        }
+
+        /* Project Gallery */
+        .project-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+        }
+
+        .project-card {
+            background: var(--card-bg);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary-color);
+            box-shadow: 0 10px 30px -10px rgba(0, 212, 255, 0.3);
+        }
+
+        .project-img {
+            width: 100%;
+            height: 200px;
+            background-color: #334155;
+            object-fit: cover;
+        }
+
+        .project-info {
+            padding: 25px;
+            flex-grow: 1;
+        }
+
+        .project-tag {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            color: var(--primary-color);
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .project-info h3 { margin: 10px 0; }
+
+        .project-link {
+            display: inline-block;
+            margin-top: 15px;
+            font-weight: bold;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        /* Skills */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skill-item {
+            background: #1e293b;
+            padding: 10px 20px;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 60px 20px;
+            background: #020617;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .social-icons a {
+            color: white;
+            margin: 0 15px;
+            font-size: 1.5rem;
+            transition: 0.3s;
+        }
+
+        .social-icons a:hover { color: var(--primary-color); }
+
+        @media (max-width: 768px) {
+            .hero-title { font-size: 3rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 class="hero-title">DERI</h1>
+        <p class="hero-subtitle">Data Science Student • Control Room Specialist • Founder of Infinity Group</p>
+        <div class="social-icons">
+            <a href="https://github.com/derrr08"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>Tentang Saya</h2>
+        <p style="font-size: 1.1rem; max-width: 800px;">
+            Mahasiswa <strong>Data Science</strong> yang fokus pada analisis pola data untuk solusi strategis. 
+            Memiliki pengalaman sebagai <strong>Control Room Officer</strong> yang membentuk ketelitian tinggi 
+            dan kemampuan analisis real-time. Saat ini sedang mengembangkan <strong>Infinity Group</strong> 
+            sebagai wadah kreativitas digital dan edukasi teknologi.
+        </p>
+    </section>
+
+    <section id="gallery">
+        <h2>Project Gallery</h2>
+        <div class="project-gallery">
+            <div class="project-card">
+                <div class="project-img" style="background: url('https://images.unsplash.com/photo-1551288049-bbbda536639a?w=500') center/cover;"></div>
+                <div class="project-info">
+                    <span class="project-tag">Data Analysis</span>
+                    <h3>Prediksi Mobilitas Sosial</h3>
+                    <p>Proyek analisis data menggunakan Python untuk memetakan dinamika kelas sosial dan ekonomi.</p>
+                    <a href="#" class="project-link">Lihat Detail <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img" style="background: url('https://images.unsplash.com/photo-1552664730-d307ca884978?w=500') center/cover;"></div>
+                <div class="project-info">
+                    <span class="project-tag">Creative Agency</span>
+                    <h3>Infinity Group Branding</h3>
+                    <p>Strategi konten dan pengembangan identitas digital untuk ekosistem kreator masa depan.</p>
+                    <a href="#" class="project-link">Lihat Proyek <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img" style="background: url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500') center/cover;"></div>
+                <div class="project-info">
+                    <span class="project-tag">Monitoring System</span>
+                    <h3>Dashboard Monitoring</h3>
+                    <p>Visualisasi sistem kontrol untuk optimasi pemantauan operasional secara efisien.</p>
+                    <a href="#" class="project-link">Lihat Sertifikat <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Keahlian Utama</h2>
+        <div class="skills-container">
+            <div class="skill-item">Python & R</div>
+            <div class="skill-item">Machine Learning</div>
+            <div class="skill-item">SQL Database</div>
+            <div class="skill-item">Content Strategy</div>
+            <div class="skill-item">Crisis Management</div>
+            <div class="skill-item">Data Visualization</div>
+        </div>
+    </section>
+
+    <footer>
+        <p style="margin-bottom: 10px;">Mari berkolaborasi membangun masa depan teknologi.</p>
+        <p style="opacity: 0.5; font-size: 0.9rem;">&copy; 2026 Deri. Built with passion and logic.</p>
+    </footer>
+
+</body>
+</html>
